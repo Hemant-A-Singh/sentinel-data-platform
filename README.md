@@ -18,8 +18,10 @@ Clone the repository:
 
     git clone <https://github.com/Hemant-A-Singh/sentinel-data-platform>
 
-Configur user name and email in your local git
+Configur user name and email in your local git using
+    
     git config --global user.name <"Name">
+
     git config --global user.email = <"Email">
 
 Navigate to the project directory:
