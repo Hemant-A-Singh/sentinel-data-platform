@@ -1,9 +1,8 @@
-# Nexora Cross-System ERD — First Joins
+# Sentinel Cross-System ERD — First Joins
 
 This ERD prioritizes the requested **customer, product, and order** path and includes the main surrounding entities needed to validate order-to-cash and fulfilment. Table and key names come from the architecture reference (especially pages 8–10, 13, 18–20).
 
-```mermaid
-erDiagram
+```mermaid EREDiagram
     ACCOUNTS ||--o{ SALES_ORDERS : places
     SALES_ORDERS ||--|{ SALES_ORDER_ITEMS : contains
     PRODUCTS ||--o{ SALES_ORDER_ITEMS : appears_in
