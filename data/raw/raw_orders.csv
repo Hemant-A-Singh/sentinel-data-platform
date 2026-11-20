@@ -1,0 +1,21 @@
+order_id,customer_name,customer_email,product_name,category,quantity,unit_price,order_date,ship_country,status
+1001,Aarav Mehta,aarav.mehta@example.com,Wireless Mouse,Electronics,2,799.00,2026-06-01,India,delivered
+1002,Priya Nair,priya.nair@example.com, USB-C Cable ,Electronics,3,299.50,01/06/2026,india,delivered
+1003,John Smith,john.smith@example.com,Office Chair,Furniture,1,8999,2026-06-02,USA,shipped
+1004,,sara.k@example.com,Desk Lamp,Furniture,1,1250.00,2026-06-02,United States,pending
+1005,Wei Zhang,wei.zhang@example.com,Notebook Set,Stationery,5,120,2026/06/03,China,delivered
+1006,Fatima Al-Sayed,fatima.a@example.com,Wireless Mouse,electronics,1,799.00,2026-06-03,UAE,cancelled
+1007,Liam O'Connor,liam.oconnor@example.com,Bluetooth Speaker,Electronics,,2499.00,2026-06-04,Ireland,delivered
+1008,Ananya Iyer,ananya.iyer@example.com,Office Chair,Furniture,2,8999.00,2026-06-04,India,shipped
+1009,Carlos Ruiz,carlos.ruiz@example.com,Desk Lamp,Furniture,1,1250.00,04-06-2026,Spain,delivered
+1010,Emma Wilson,emma.wilson@example.com,Notebook Set,Stationery,10,120.00,2026-06-05,UK,delivered
+1011,Emma Wilson,emma.wilson@example.com,Notebook Set,Stationery,10,120.00,2026-06-05,UK,delivered
+1012,Rahul Verma,rahul.verma@example.com,USB-C Cable,Electronics,4,299.50,2026-06-05,India,returned
+1013,Sofia Rossi,sofia.rossi@example.com,Bluetooth Speaker,Electronics,1,2499.00,2026-06-06,Italy,delivered
+1014,Kenji Sato,kenji.sato@example.com,Wireless Mouse,Electronics,3,799.00,2026-06-06,Japan,shipped
+1015,Grace Kim,grace.kim@example.com,Office Chair,furniture,1,8999.00,2026-06-07,South Korea,pending
+1016,Noah Brown,noah.brown@example.com,Desk Lamp,Furniture,2,1250.00,2026-06-07,USA,delivered
+1017,Mei Lin,mei.lin@example.com,Notebook Set,Stationery,7,120.00,07/06/2026,Singapore,delivered
+1018,David Cohen,david.cohen@example.com,USB-C Cable,Electronics,1,,2026-06-08,Israel,pending
+1019,Anastasia Petrova,anastasia.p@example.com,Bluetooth Speaker,Electronics,2,2499.00,2026-06-08,Russia,shipped
+1020,Hemant Rajput,hemant.r@example.com,Wireless Mouse,Electronics,1,799.00,2026-06-09,India,delivered

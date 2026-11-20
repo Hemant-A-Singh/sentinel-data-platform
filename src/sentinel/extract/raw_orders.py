@@ -13,13 +13,15 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 
-file = "/mnt/c/Users/heman/Downloads/raw_orders.csv"
+BASE_DIR = Path(__file__).resolve().parents[3]
+file = str(BASE_DIR / "data" / "raw" / "raw_orders.csv")
+#file = "/mnt/c/Users/heman/Downloads/raw_orders.csv"
 
 def connect():
     try:
         conn = psycopg2.connect(
-                        host = os.getenv("POSTGRES_HOST"),
-                        port = int(os.getenv("POSTGRES_PORT",5433)),
+                        host = os.getenv("SENTINEL_DB_HOST", "localhost"),
+                        port = int(os.getenv("SENTINEL_DB_PORT", 5433)),
                         user = os.getenv("POSTGRES_USER"),
                         password = os.getenv("POSTGRES_PASSWORD"),
                         database = os.getenv("POSTGRES_DB")
@@ -81,11 +83,11 @@ def load_raw_data(file_path:str,target_table:str, conn):
 def main():
     conn = connect()
     try:
-        execute_sql_file(file_path="sql/raw_orders.sql", conn=conn)
+        execute_sql_file(file_path=str(BASE_DIR / "sql" / "raw_orders.sql"), conn=conn)
         
         load_raw_data(file_path=file, target_table="raw_orders", conn=conn)
 
-        execute_sql_file(file_path="sql/transform_orders.sql", conn=conn)
+        execute_sql_file(file_path=str(BASE_DIR / "sql" / "transform_orders.sql"), conn=conn)
 
         conn.commit()
         logger.info("Data transformation completed successfully.")
